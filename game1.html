@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Tap Game</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: #111;
+      color: white;
+    }
+    button {
+      font-size: 30px;
+      padding: 20px 40px;
+      margin-top: 40px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🎮 Tap Game</h1>
+<p>Button par tap karo</p>
+<h2 id="score">Score: 0</h2>
+
+<button onclick="tap()">TAP ME</button>
+
+<script>
+let score = 0;
+function tap() {
+  score++;
+  document.getElementById("score").innerHTML = "Score: " + score;
+}
+</script>
+
+</body>
+</html>
