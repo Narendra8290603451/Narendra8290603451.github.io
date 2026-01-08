@@ -1,0 +1,15 @@
+DOCTYPE html>
+<html>
+<body style="text-align:center;background:#222;color:white;">
+<h1>🏃 Running Game</h1>
+<p>SPACE दबाओ</p>
+<div style="width:300px;height:150px;background:#555;margin:auto;position:relative;">
+<div id="p" style="width:30px;height:30px;background:red;position:absolute;bottom:0;"></div>
+</div>
+<script>
+document.body.onkeydown=()=>{document.getElementById('p').style.bottom='80px';
+setTimeout(()=>{document.getElementById('p').style.bottom='0';},300);}
+</script>
+<a href="index.html">Back</a>
+</body>
+</html>
